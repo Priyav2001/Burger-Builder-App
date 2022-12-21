@@ -1,0 +1,67 @@
+/* pop up */
+/* .Orderpage{
+    background-color: beige;
+} */
+.Orderpage1{
+
+    height: 60%;
+    width: 50%;
+    position:absolute;
+    top: 0;
+    background-repeat: no-repeat;
+    background-position: center;
+    display: table;
+    margin-left: 310px;
+    margin-top: 100px;
+    background-color: rgb(239, 227, 164);
+}
+*{
+    text-align: center;
+}
+.main{
+ 
+    background-color: rgba(238, 243, 217, 0.71);
+    height: 100%;
+    width: 100%;
+    position:absolute;
+    top: 0;
+}
+.popup{
+    height: 200px;
+    width: 40%;
+    background-color: rgb(229, 175, 28);
+    position: absolute;
+    top: 25%;
+    right: 30%;
+}
+.popup-header{
+    display: flex;
+    justify-content: space-between;
+    padding: 0 30px 0 15px;
+    border-bottom: 2px solid black;
+}
+.pp{
+    color:#f1f3ec;
+    margin-top: 12px;
+}
+.click{
+    margin-top: 150px;
+    background-color: rgb(232, 229, 189);
+    border-radius: 12px;
+    padding: 12px;
+    margin-bottom: 123px;
+    justify-content: center;
+}
+.totalprice{
+    margin-top: 12px;
+    border-radius: 15px;
+    background-color: bisque;
+    padding: 12px;
+}
+.cross{
+    color:black;
+    size: 12px;
+}
+.arrayitems{
+    margin-top: -112px;
+}

@@ -1,0 +1,156 @@
+.text{
+    text-align: center;
+    margin-top: 12px;
+    color: #dcc3a4;
+}
+.burgerIngredients{
+    height: 290px;
+    width: 100%;
+    overflow: auto;
+    margin-left: -250px;
+    margin-top: 15px;
+    justify-content: center;
+}
+.Burger1{
+    background-color: #fadb9a68;
+    margin: auto 10px;
+    padding-top: 100px;
+    padding-bottom: 9px;
+    width: auto;
+    height: 460px;
+}
+.burgerIngredients p{
+    text-align: center;
+}
+.topSide{
+    background-image: url(../assets/top.jpg);
+    background-size: 300px;
+    height: 110px;
+    width: 100%;
+    display: table;
+    background-repeat: no-repeat;
+    background-position: center;
+    margin-top: 22px;
+}
+
+.bottomSide{
+    background-image: url(../assets/bottom.jpg);
+    background-size: 300px;
+    height: 60px;
+    width: 100%;
+    display: table;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.lettuseSide{
+    background-image: url(../assets/lettuse.jpg);
+    background-size: 300px;
+    height: 27px;
+    width: 100%;
+    display: table;
+    background-repeat: no-repeat;
+    background-position: center;
+   background-position: center;
+}
+.tomatoSide{
+    background-image: url(../assets/tomato.jpg);
+    background-size: 300px;
+    height: 20px;
+    width: 100%;
+    display: table;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.cheeseSide{
+    background-image: url(../assets/cheese.jpg);
+    background-size: 300px;
+    height: 15px;
+    width: 100%;
+    display: table;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.meatSide{
+    background-image: url(../assets/meat.jpg);
+    background-size: 300px;
+    height: 49px;
+    width: 100%;
+    display: table;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.ingredientsBlock{
+    background-color: #f4b46c;
+    margin: 30px auto 0;
+    display: table;
+    max-width: 200px;
+    width: 100%;
+    border-radius: 3px;
+    padding: 20px;
+    text-align: center;
+    position: fixed;
+    top: 0;
+    right: 0;
+    margin-right: 200px;
+    margin-top: 100px;
+
+}
+.ingredientsBlock p{
+    padding: 0;
+    margin: 0;
+    font-weight: bold;
+    font-size: 18px;
+    text-transform: uppercase;
+}
+.ingrBtns{
+    margin: 0 0 20px;
+    display: flex;
+    justify-content: space-between;
+    /* padding:1px 12px; */
+    margin-top: 18px;
+    /* margin-right: 120px; */
+}
+.ingrBtn1{
+    border: 0;
+    background-color: #382208;
+    color: #fff;
+    padding: 5px 10px;
+    cursor: pointer;
+    display: table;
+    width: 70px;
+}
+.ingrBtn2{
+    border: 0;
+    background-color: #c17116;
+    color: #fff;
+    padding: 5px 10px;
+    cursor: pointer;
+    display: table;
+    width: 70px;
+}
+
+.button{
+    font-size: 15px;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    background-color: rgb(153, 90, 31);
+    border-radius: 15px;
+    padding: 10px;
+    margin-left: 60px;
+    color:rgb(18, 17, 15);
+    margin-bottom: 12px;
+    margin-top: -12px;
+}
+.ptext{
+    color: rgb(49, 44, 5);
+    margin-bottom: 12px;
+}
+.ORDERPAGE{
+    margin-top: 110px;
+
+}
+.button{
+    
+}
