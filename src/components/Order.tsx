@@ -1,5 +1,7 @@
 import React, { useState} from "react";
 import {useLocation} from 'react-router-dom';
+import { Button, Popover } from 'antd';
+// import { Button } from 'antd';
 import './Order.css'
 function Order(){
  
@@ -15,7 +17,7 @@ function Order(){
   const handleClickOpen=()=>{
       setPop(!popup)
       return(
-        myarray
+        "The price is"
       );
   }
   const closePopup=()=>{
@@ -24,8 +26,12 @@ function Order(){
   return(
     <div className="Orderpage">
       <div className="Orderpage1">
+      <Popover content={handleClickOpen} trigger="click">
+        <Button style={{backgroundColor:"#A47551", color:"white", justifyContent:'center'}} className="click" onClick={handleClickOpen}>Let's continue to order</Button>
+        </Popover>
 
-          <button className="click" onClick={handleClickOpen}>Let's continue to order</button>
+
+          
             <div className="arrayitems">
             <h3>Ordered items</h3>
             <p>Salad: {myarray[0]}</p>
@@ -33,6 +39,7 @@ function Order(){
             <p>Cheese: {myarray[2]}</p>
             <p>Meat: {myarray[3]}</p>
             </div>
+            
               {
                   popup?
                   <div className="main">
@@ -46,9 +53,10 @@ function Order(){
                       </div>
                   </div>:""
               }
+            
           </div>
       </div>
-      
+    
   )
             }
 export default Order;
