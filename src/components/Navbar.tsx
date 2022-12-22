@@ -1,6 +1,8 @@
 import React from "react";
+import { Layout } from 'antd';
 import { useNavigate } from 'react-router-dom';
 import Logoimg from "./logo";
+import { Button } from 'antd';
 import './Navbar.css'
 function Navbar(){
     const navigate = useNavigate();
@@ -11,16 +13,16 @@ function Navbar(){
       };
       return (
         <>
-        <nav className="navbar">
-            <h1 className="text">Burgerbuilder App</h1>
-        </nav>
+        <Layout className="layout">Burgerbuilder App
+        </Layout>
+
+
         <div className="centerimg">
             <Logoimg/>
         </div>
         
         <div className="Burger">
-            <button className="button1" onClick={navigateToBurgerbuilder}>Let's Create Burger..!</button>
-            
+            <Button type="primary" style={{alignItems:'center'}}className="button1" onClick={navigateToBurgerbuilder}>Let's Create Burger..!</Button>
         </div>
         </>
         
