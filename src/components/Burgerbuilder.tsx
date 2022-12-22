@@ -1,7 +1,8 @@
 import React,{ useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import './BurgerStyle.css'
-export default function Burgerbuilder(){
+import { Button } from 'antd';
+function Burgerbuilder(){
     const [lettuce, setLettuce] = useState(0);
     const [tomato, setTomato] = useState(0);
     const [cheese, setCheese] = useState(0);
@@ -90,37 +91,40 @@ export default function Burgerbuilder(){
                 {burgerContent()}
                 <div className="bottomSide"></div>
             </div>
+
             <div className="ingredientsBlock">
                 <p className="ptext">Salad</p>
                 <div className="ingrBtns">
-                <button className="ingrBtn1" onClick={()=>addRemoveIngredient('add','lettuce')}>More</button>
-                <button className="ingrBtn2" onClick={()=>addRemoveIngredient('less','lettuce')}>Remove</button>
+                <Button type='text' className="ingrBtn1" onClick={()=>addRemoveIngredient('add','lettuce')}>More</Button>
+                <Button type='text' danger style={{color:'black'}} className="ingrBtn2" onClick={()=>addRemoveIngredient('less','lettuce')}>Less</Button>
     
-            </div>
+                </div>
                 <p>Bacon</p>
                 <div className="ingrBtns">
-                <button className="ingrBtn1" onClick={()=>addRemoveIngredient('add','tomato')}>More</button>
-                <button className="ingrBtn2" onClick={()=>addRemoveIngredient('less','tomato')}>Remove</button>
+                <Button type='text' className="ingrBtn1" onClick={()=>addRemoveIngredient('add','tomato')}>More</Button>
+                <Button type='text' danger style={{color:'black'}} className="ingrBtn2" onClick={()=>addRemoveIngredient('less','tomato')}>Less</Button>
     
                 </div>
                 <p>CHEESE</p>
                 <div className="ingrBtns">
-                <button className="ingrBtn1" onClick={()=>addRemoveIngredient('add','cheese')}>More</button>
-                <button className="ingrBtn2" onClick={()=>addRemoveIngredient('less','cheese')}>Remove</button>
+                <Button type='text' className="ingrBtn1" onClick={()=>addRemoveIngredient('add','cheese')}>More</Button>
+                <Button type='text' danger style={{color:'black'}} className="ingrBtn2" onClick={()=>addRemoveIngredient('less','cheese')}>Less</Button>
     
                 </div>
                 <p>Meat</p>
                 <div className="ingrBtns">
-                <button className="ingrBtn1" onClick={()=>addRemoveIngredient('add','meat')}>More</button>
-                <button className="ingrBtn2" onClick={()=>addRemoveIngredient('less','meat')}>Remove</button>
+                <Button type='text' className="ingrBtn1" onClick={()=>addRemoveIngredient('add','meat')}>More</Button>
+                <Button type='text' danger style={{color:'black'}} className="ingrBtn2" onClick={()=>addRemoveIngredient('less','meat')}>Less</Button>
     
                 </div>
-               
+            
             </div>
+
             <div className="ORDERPAGE">
-                <button className="button" onClick={()=>Order()}>Order</button>
+                <Button type="link" className="button" onClick={()=>Order()}>Order</Button>
             </div>
             </div>
         </>
     );
 }
+export default Burgerbuilder;
